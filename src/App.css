@@ -1,38 +1,146 @@
-.App {
+/* Google Fonts (Poppins) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+:root {
+ --header-height:3rem;
+
+ /* Typhography */
+  --body-font:'Poppins', sans-serif;
+
+/* Ukuran Fonts */
+
+ --font-normal:400;
+ --font-medium:500;
+ --font-semi-bold:600;
+
+/* Z-index */
+
+ --z-tooltip:10;
+ --z-fixed:100;
+ --z-modal:1000;
+
+}
+
+
+ /* Responsive Typhography */
+
+ @media screen and (max-width: 992px){
+  :root{
+    --big-font-size:2.75rem;
+    --h1-font-size:1.5rem;
+    --h2-font-size:1.25rem;
+    --h3-font-size:1rem;
+    --normal-font-size:0.938rem;
+    --small-font-size:0.813rem
+    --smaller-font-size:0.75rem;
+  }
+}
+
+/* Default */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(169, 199, 183)
+}
+
+html{
+  scroll-behavior: smooth;
+
+}
+
+body,
+button{
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+body{
+  background-color: rgb(103, 107, 105);
+  color: black;
+}
+
+h1, h2, h3 {
+  color: black;
+  font-weight: var(--font-semi-bold);
+}
+
+ul{
+  list-style: none;
+
+}
+
+a{
+  text-decoration: none;
+}
+
+button{
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+/* Class Components */
+
+.section{
+  padding: 6rem 0 2rem;
+
+}
+
+.section__title{
+  font-size: var(--h1-font-size);
+  color: rgb(63, 116, 89);
+}
+
+.section__subtitle{
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: 4rem;
+}
+
+.section__title,
+.section__subtitle{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.grid{
+  display: grid;
+  gap: 1.5rem;
+}
+/* Responsive Breakpoints */
+
+@media screen and (max-width: 992px){
+  .container{
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
   }
+};
+  
+@media screen and (max-width:768px) {
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media screen and(max-width: 576px) {
+  
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 350px) {
+  .container{
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
-  to {
-    transform: rotate(360deg);
-  }
+  
 }
+

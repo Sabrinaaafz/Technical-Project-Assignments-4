@@ -1,0 +1,189 @@
+.inner {
+    /* background-color: #f0f0f0; */
+    padding-top: 50px;
+  }
+  
+  .header {
+    text-align: center;
+    color: rgb(46, 76, 105);
+    padding: 1rem;
+    position: relative;
+    font-size: var(--h1-font-size);
+  }
+  
+ 
+  
+  .container2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    align-items: center;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+  }
+  
+  .skill-box {
+    padding: 1rem;
+    color: #ddd;
+    cursor: pointer;
+  }
+  
+  .skill-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    margin-bottom: 0.5rem;
+    position: relative;
+  }
+  
+  .img-skill {
+    width: 90px;
+    height: 90px;
+
+    position: relative;
+    border-radius: 45px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .img-skill:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 90px;
+    background-color: rgba(100, 100, 100, 0.5);
+    border-radius: 45px 0 0 45px;
+  }
+  
+  .skill-icon {
+    width: 50px;
+    z-index: 2;
+    margin-left: 1px;
+    border-radius: 50px;
+  }
+  
+  .bar {
+    background: #3b5999;
+    display: block;
+    width: 100%;
+    height: 9px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+  
+  .bar:hover {
+    box-shadow: 0 14px 38px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.24);
+  }
+  
+  .bar span {
+    height: 20px;
+    float: left;
+    background: linear-gradient(
+      135deg,
+      rgba(236, 0, 140, 1) 0%,
+      rgba(252, 103, 103, 1) 100%
+    );
+  }
+  
+  .html {
+    width: 50%;
+    animation: html 3s;
+  }
+  
+  .CSS {
+    width: 50%;
+    animation: CSS 3s;
+  }
+  
+  .Javascript {
+    width: 30%;
+    animation: javascript 3s;
+  }
+  
+  .Python {
+    width: 30%;
+    animation: Python 3s;
+  }
+  
+  .VB {
+    width: 70%;
+    animation: VB 3s;
+  }
+  
+  .PHP {
+    width: 30%;
+    animation: PHP 3s;
+  }
+  
+  @keyframes html {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 50%;
+    }
+  }
+  
+  @keyframes CSS {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 50%;
+    }
+  }
+  
+  @keyframes javascript {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 30%;
+    }
+  }
+  
+  @keyframes Python {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 30%;
+    }
+  }
+  
+  @keyframes VB {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 70%;
+    }
+  }
+  
+  @keyframes PHP {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 30%;
+    }
+  }
+
+  .pro__title{
+    font-weight: var(--h1-font-size);
+    font-size: 25px;
+    margin-top: 7rem;
+    text-align: center;
+}
+
+  
